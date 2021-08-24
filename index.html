@@ -7,6 +7,7 @@
     <title>The Band</title>
     <link rel="icon" href="./assets/img/logo.jpg" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -19,7 +20,7 @@
                <li><a href="#tour">Tour</a></li>
                <li><a href="#contact">Contact</a></li>
                <li>
-                   <a href="">
+                   <a href="#">
                        More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
@@ -34,6 +35,10 @@
            <!-- begin search -->
            <div class="search-btn">
                 <i class="search-icon ti-search"></i>
+           </div>
+
+           <div class="mobile-menu-btn">
+               <i class="menu-icon ti-menu"></i>
            </div>
            <!-- end search -->
         </div>
@@ -225,6 +230,29 @@
         modalContainer.addEventListener('click', function(event) {
             event.stopPropagation()
         })
+    </script>
+
+    <script>
+        const header = document.getElementById('header');
+        const mobileMenu = document.querySelector('.mobile-menu-btn');
+        const headerHight = header.clientHeight;
+
+        mobileMenu.onclick = function () {
+            const isClosed = header.clientHeight === headerHight;
+            if (isClosed) {
+                header.style.height = 'auto';
+            }
+            else {
+                header.style.height = null;
+            }
+        }
+
+        const menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i = 0; i < menuItems.length; i++) {
+            const menuItem 
+        }
+
+
     </script>
 
 
