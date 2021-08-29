@@ -35,6 +35,10 @@ html {
     margin-top: 16px !important;
 }
 
+.mt-32 {
+    margin-top: 32px !important;
+}
+
 .row {
     margin-left: -8px; 
     margin-right: -8px;
@@ -94,7 +98,6 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
-    overflow: hidden;
 }
 
 #nav {
@@ -153,6 +156,13 @@ html {
 
 #nav .nav-arrow-down {
     font-size: 14px;
+}
+
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
 }
 
 #header .mobile-menu-btn,
@@ -245,7 +255,7 @@ html {
 }
 
 #content .members-list {
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 #content .member-name {
@@ -257,6 +267,7 @@ html {
     margin-top: 15px;
     border-radius: 4%;
 }
+
 
 /*Tour section*/
 
@@ -297,7 +308,7 @@ html {
 }
 /* Places */
 .places-list {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-img {
@@ -435,6 +446,15 @@ html {
 .contact-info {
     font-size: 18px;
     line-height: 1.5;
+}
+
+.contact-info a {
+    color: #3156f2;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
 }
 
 .contact-info i[class*='ti-'] {
